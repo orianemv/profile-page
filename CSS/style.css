@@ -20,6 +20,7 @@ h3{
 	font-family: 'Raleway', sans-serif;
 	font-variant: small-caps;
 	font-size: 25px;
+	padding: 5px;
 }
 
 h4{
@@ -57,18 +58,26 @@ nav{
 
 li{
 	list-style-type: none;
-	padding: 3px;
+	padding: 4px;
 	font-size: 23px;
 	text-align: right;
 	margin-top: 05px;
 	margin-right: 10px;
+
 }
 
 a{
 	color: #efebe9;
 	font-variant: small-caps;
-	text-decoration: overline #efebe9;
+	text-decoration: none;
+	transition: all ease 2s;
+	border-top: 1px solid #efebe9;
 }
+
+a:hover{
+	transform: translateX(-250px);
+}
+
 
 .parapara{
 	padding: 80px;
