@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
 
-	$('a').mouseenter(function(event){
+	$('body').on("click", "a", function(event){
+	$('a').mouseenter()
 		event.preventDefault();
 
 
@@ -37,7 +38,7 @@ $(document).ready(function(){
 		// });
 
 
-	$.getJSON('http://vps227573.ovh.net/u-8.json', function(data) {
+	$.getJSON('https://s.idsympa.com/u-8.json', function(data) {
 
 		var template =$('#template').html();
 		var rendered = Mustache.to_html(template, data);
