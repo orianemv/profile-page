@@ -31,10 +31,10 @@ $(document).ready(function(){
 
 
 	// var url = 'https://s.idsympa.com/u-8.json'
-	var url ='user-8.json'
+	// var url ='user-8.json'
 
 
-	$.getJSON(url, function(data) {
+	$.getJSON('https://s.idsympa.com/u-8.json', function(data) {
 
 		var template =$('#template').html();
 		var rendered = Mustache.to_html(template, data);
